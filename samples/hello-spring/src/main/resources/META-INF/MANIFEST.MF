@@ -1,0 +1,1 @@
+Diagnostic-Main: com.rabbitstewdio.pentaho.diagnostics.sample.spring.HelloSpringTest

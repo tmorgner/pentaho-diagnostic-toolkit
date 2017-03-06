@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin title="Diagnostic Plugin" name="diagnostic">
+
+  <lifecycle-listener class="com.rabbitstewdio.pentaho.diagnostics.PluginStartupHandler"/>
+
+  <static-paths>
+    <static-path url="/diagnostic/images" localFolder="images"/>
+  </static-paths>
+
+  <content-types>
+    <content-type type="jar" mime-type="x-application/diagnostic-jar">
+      <title>Diagnostic Test</title>
+      <description>Diagnostic Test</description>
+      <icon-url>api/repos/diagnostic/images/FileType.png</icon-url>
+<!--
+      <meta-provider>com.rabbitstewdio.pentaho.diagnostics.DiagnosticFileMetaDataProvider</meta-provider>
+      -->
+      <operations>
+        <operation>
+          <id>RUN</id>
+          <perspective>viewer</perspective>
+        </operation>
+        <operation>
+          <id>NEWWINDOW</id>
+          <perspective>viewer</perspective>
+        </operation>
+        <operation>
+          <id>SCHEDULE_NEW</id>
+          <perspective>viewer</perspective>
+        </operation>
+        <operation>
+          <id>SCHEDULE_EDIT</id>
+          <perspective>viewer</perspective>
+        </operation>
+      </operations>
+    </content-type>
+  </content-types>
+
+</plugin>
+
